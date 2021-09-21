@@ -38,7 +38,7 @@ Replace `{organization_id}` with the Id of the organization you want to list its
 > e.g.  `https://api.zuri.chat/organizations/6137d69b21d3c78fc9a84bdf/members/`. 
 
 *The response returns a success 200 code and the list of all members in the specified organization Id in json format and an empty array if there are no members* 
-## Response Sample
+###### Response sample
 **Content type** 
 application/json
 ```sh
@@ -55,14 +55,14 @@ To add a user to an organization, send a **POST** request to this **Endpoint**
 `https://api.zuri.chat/organizations/{organization_id}/members`, along with aunthentication(cookieAuth/bearerAuth) in the request header for authorization. 
 Replace `{organization_id}` with the Id of the organization you want to add a user. 
 > e.g. `https://api.zuri.chat/organizations/6137d69b21d3c78fc9a84bdf/members/` 
-## Request body Sample
+###### Request body sample
 **content type** 
 application/json
 ```sh
 { “user_id”: “6137d69b21d3c78fc9a84bdf” }
 ``` 
 *The response returns a success 201 code and confirmation data in json format.* 
-## Response Sample
+###### Response sample
 **Content type** 
 application/json
 ```sh
@@ -82,7 +82,7 @@ Replace `{organization_id}` with the Id of the organization you want to fetch a 
 > e.g. `https://api.zuri.chat/organizations/6137d69b21d3c78fc9a84bdf/members/6137d69b21d3c78fc9a84bdf`
 
 *The response returns a 200 success code and the full record of the specified member in json format.* 
-## Response Sample
+#### Response sample
 **Content type** 
 application/json
 ```sh
@@ -113,14 +113,14 @@ Replace `{organization_id}` with the Id of the organization you want to fetch a 
 > e.g. `https://api.zuri.chat/organizations/6137d69b21d3c78fc9a84bdf/members/6137d69b21d3c78fc9a84bdf`
 
 Then in the body of the request provide the key-value pair of the item you want to update in the member record in json format. 
-## Request body Sample
+#### Request body sample
 **content type** 
 application/json
 ```sh
 e.g. { “data”: “2” } 
 ```
 *The response returns a success 200 code and confirmation data in json format* e.g.
-## Response Sample
+#### Response sample
 **content type** 
 application/json
 ```sh
@@ -136,7 +136,7 @@ Replace `{organization_id}` with the Id of the organization you want to delete a
 > e.g. `https://api.zuri.chat/organizations/6137d69b21d3c78fc9a84bdf/members/6137d69b21d3c78fc9a84bdf`
 
 *The response returns a success 200 code and confirmation data in json format.* 
-## Response Sample
+#### Response sample
 **content type** 
 application/json
 ```sh
@@ -154,14 +154,14 @@ along with aunthentication(cookieAuth/bearerAuth) in the request header for auth
 Replace `{organization_id}` with the Id of the organization you want to update it's member status and replace `{member_id}` with the Id of the member you want to update their status.
 > e.g. `https://api.zuri.chat/organizations/6137d69b21d3c78fc9a84bdf/members/6137d69b21d3c78fc9a84bdf/status`
 Then in the body of the request provide the status and its value in json format. 
-## Request Body Sample
+#### Request body sample
 **content type** 
 application/json
 ```sh
 e.g. { “status”: “Available” } 
 ```
 *The response returns a success 200 code and confirmation data in json format.* 
-## Response Sample
+#### Response sample
 **content type** 
 application/json
 ```sh
@@ -177,14 +177,14 @@ Replace `{organization_id}` with the Id of the organization you want to update t
 > e.g. `https://api.zuri.chat/organizations/6137d69b21d3c78fc9a84bdf/members/6137d69b21d3c78fc9a84bdf/photo`
 
 Then in the body of the request provide "image_utl" and the image link as a key-value pair in json format. 
-## Request Body Sample
+#### Request body sample
 **content type** 
 application/json
 ```sh
 { “image_utl”: “https://image.storage/image.png” } 
 ```
 *The response returns a success 200 code and confirmation data in json format.* 
-## Response Sample
+#### Response sample
 **content type** 
 application/json
 ```sh
@@ -200,14 +200,14 @@ Replace `{organization_id}` with the Id of the organization you want to update t
 > e.g. `https://api.zuri.chat/organizations/6137d69b21d3c78fc9a84bdf/members/6137d69b21d3c78fc9a84bdf/profile`
 
 Then in the body of the request provide the key-value pair of the item you want to update in json format.
-## Request Body Sample
+#### Request body sample
 **content type** 
 application/json
 ```sh
 e.g. { “data”: “string” } 
 ```
 *The response returns a success 200 code and confirmation data in json format.* 
-## Response Sample
+#### Response sample
 **content type** 
 application/json
 ```sh
@@ -223,7 +223,7 @@ Replace `{organization_id}` with the Id of the organization you want to toggle t
 > e.g. `https://api.zuri.chat/organizations/6137d69b21d3c78fc9a84bdf/members/6137d69b21d3c78fc9a84bdf/presence`
 
 *The response returns a success 200 code and confirmation data in json format.* 
-## Response Sample
+#### Response sample
 **content type** 
 application/json
 ```sh
@@ -239,7 +239,7 @@ Replace `{organization_id}` with the Id of the organization you want to update i
 > e.g. `https://api.zuri.chat/organizations/6137d69b21d3c78fc9a84bdf/members/6137d69b21d3c78fc9a84bdf/settings`
 
 Then in the body of the request provide the key-value pair of the settings you want to update in json format. 
-## Request Body Sample
+#### Request body sample
 **content type** 
 application/json
 ```sh
@@ -254,7 +254,7 @@ application/json
 }
 ```
 *The response returns a success 200 code and confirmation data in json format.*
-## Response Sample
+#### Response sample
 **content type** 
 application/json
 ```sh
